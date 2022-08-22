@@ -18,10 +18,10 @@ public class TestSobreescritura {
         imprimir(empleado); //Recibe variable empleado su referencia es empleado, se ejecuta el metodo de la clase padre
 
         //----------- << 2... Creamos un objeto de la clase hija << -------------------
-        Gerente gerente = new Gerente("Karla", 50, "Contabilidad");
+        empleado = new Gerente("Karla", 50, "Contabilidad"); //Reutilizando la variable ya que es de un tipo compatible (padre), ya que importa la referencia
         //System.out.println("gerente = " + gerente.obtenerDetalles());
         //----------- << 5.2... Como se manda la variable empleado utiliza el metodo de la clase padre << -------------------
-        imprimir(gerente); //Recibe variable gerente su referencia es gerente, se ejecuta el metodo de la clase hija
+        imprimir(empleado); //Recibe variable gerente su referencia es gerente, se ejecuta el metodo de la clase hija
 
     }
 
